@@ -8,16 +8,6 @@ function searchString(obj) {
     endS=endS+s;
   }
 
-
-//toBe('?a=123&b=qwe')
-  // for (let key in user) {
-  //   // ключи
-  //   alert( key );  // name, age, isAdmin
-  //   // значения ключей
-  //   alert( user[key] ); // John, 30, true
-  // }
-
-  //str.substring(0, str.length - 1)
 return endS.substring(0,endS.length-1);
 }
 
