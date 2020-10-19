@@ -8,8 +8,26 @@
   Примечание: Должно работать только с числами
  */
 
-function baseExpect(a) {
-  // Напиши свой код здесь
+
+
+function baseExpect(a){
+  const base = function (a) {
+
+  };
+
+  let toBe = function (b) {
+    return a === b;
+  }
+
+  let not = function(c) {
+    return a !== c;
+  }
+
+  base.toBe = toBe;
+  base.toBe.not = not;
+
+  return base; 
+  
 }
 
 window.baseExpect = baseExpect;

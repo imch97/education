@@ -8,7 +8,7 @@ describe('base-expect', () => {
     test('baseExpect should be function', () => {
       expect(typeof baseExpect).toBe('function');
     });
-    test('baseExpect().not should exist', () => {
+    test('baseExpect().toBe.not should exist', () => {
       expect(baseExpect().toBe.not).toBeDefined();
     });
     test('baseExpect().toBe.not should be function', () => {
