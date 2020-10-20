@@ -10,8 +10,6 @@ function rowZero(str) {
     if( str[i]==="1") {max_count_zero=0;continue;}
   }
 
-
-
 return itog;
 }
 
