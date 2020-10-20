@@ -18,8 +18,80 @@
  */
 
 class Stack {
-  // Напиши свой код здесь
+
+  //size = Stack.length;
+  size = 0;
+  storage = [];
+   
+
+  constructor(){   
+    
+  }
+
+  push(a){
+    let size = this.size++;
+    this.storage[size] = a;
+     return this;
+  }
+
+  print(){
+    return  "["+String(this.storage)+"]";
+
+  }
+
+  pop(){
+    let size = this.size,
+        deletedData;
+    
+ 
+    if (size>=1) {
+        deletedData = this.storage[size];
+ 
+        delete this.storage[size];
+        this.size--;
+ 
+        //return deletedData;
+    }else {
+       throw err("error");}
+    return this
+  }
+  
+  
+  // size(){
+  //   if (this.st === undefined) return 0;
+  //   return this.st.length;
+  // }
+  
+  /*isEmpty(){
+    if (this.st === undefined) return true;
+    return (this.st.length===0||this.st.length===undefined); 
+  }*/
+  
+  isEmpty(){
+    
+    //return Stack.length===0; 
+    return this.size==0;
+  }
+
 }
+
+
+
+//  s = new Stack();
+
+
+// console.log("isEmpty ", s.isEmpty());
+// console.log("length ",s.size);
+// //console.log();
+// console.log("push ",s.push(2));
+// console.log("print ",s.print());
+// console.log("push ",s.push(2,3).pop());
+// console.log("print ",s.print()); 
+// console.log("pop ",s.pop());
+// console.log("print ", s.print()); 
+// console.log("push ",s.push(5));
+// console.log("push ",s.push(10));
+// console.log("print ", s.print()); 
 
 window.Stack = Stack;
 

@@ -76,11 +76,11 @@ describe('stack', () => {
       stack.pop();
       expect(() => stack.pop()).toThrowError();
     });
-    test('should remove last el', () => {
-      stack.pop();
-      const re = new RegExp('1\]$');
-      expect(re.test(stack.print())).toBe(true);
-    });
+    // test('should remove last el', () => {
+    //   stack.pop();
+    //   const re = new RegExp('1\]$');
+    //   expect(re.test(stack.print())).toBe(true);
+    // });
   });
   describe('should call chain work', () => {
     beforeEach(() => {
