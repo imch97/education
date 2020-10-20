@@ -13,7 +13,9 @@
  */
 
 function isValidEmail(email) {
-  // Напиши свой код здесь
+  let regexp = /[-.\w]+@([\w-]+\.)+[\w-]+/g;
+return(email.match(regexp)==email);
+  
 }
 
 window.isValidEmail = isValidEmail;
